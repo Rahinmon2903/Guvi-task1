@@ -1,0 +1,1540 @@
+:root {
+    --orange-color: #da722c;
+    --dark-blue-color: #023047;
+    --light-blue-color: #6f7dfb;
+    --dark-color: #070917;
+    --light-color: #e8f7fb;
+    --blue-color: #057ada;
+    --background-colorlightgray: #f7f8fc;
+    --background-pinkshady: #fefcfb;
+    --background-colordarkgray: #cccccc;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    max-width: 1150px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Buttons */
+.btn {
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    white-space: nowrap;
+    padding: 16px 32px;
+    position: relative;
+
+}
+
+.btn.orange {
+    color: #f7f8fc;
+    background-color: var(--orange-color);
+}
+
+.btn.white {
+    color: var(--orange-color);
+    background-color: #f7f8fc;
+    border: 0.1px solid #fa7436;
+    font-weight: 600;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 0;
+    position: relative;
+    z-index: 100;
+    margin-bottom: 0px;
+}
+
+nav .logo {
+    font-family: "Volkhov", serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: black;
+
+}
+
+nav .logo::after {
+    content: url(./assets/Vector\ \(6\).svg);
+    display: inline-block;
+    margin-left: 8px;
+    /* vertical-align: middle; */
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: #222222;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* Hero Section */
+.journey {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    max-width: 1200px;
+    width: 100%;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+.journey .left {
+    flex: 1;
+    max-width: 550px;
+}
+
+.journey .left h1 {
+    font-family: Volkhov, sans-serif;
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 37px;
+}
+
+.journey .left .highlight {
+    color: var(--orange-color);
+}
+
+.journey .left p {
+    /* font-weight: normal; */
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 64px;
+    max-width: 497px;
+    color: #666666;
+}
+
+.journey .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image Wrapper */
+.image-wrapper {
+    position: relative;
+    width: 500px;
+    height: 600px;
+}
+
+.plane {
+    position: absolute;
+    top: -30px;
+    left: -20px;
+    width: 784px;
+    height: 191px;
+}
+
+.tourist {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 500px;
+    height: 500px;
+    z-index: 2;
+}
+
+/* Achievement Cards */
+.achievementcard {
+    position: absolute;
+    color: black;
+    z-index: 3;
+}
+
+.achievementcard .content {
+    display: flex;
+    align-items: center;
+    background-color: var(--background-colorlightgray);
+    padding: 10px 16px;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+}
+
+/* .achievementcard .icon {
+  font-size: 20px;
+} */
+
+.achievementcard .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+.achievementcard .bold {
+    font-size: 16px;
+    font-weight: 500;
+    color: #444444
+}
+
+.achievementcard p {
+    font-size: 12px;
+    color: #666666;
+    font-weight: 400;
+    line-height: auto;
+    margin: 0;
+
+}
+
+/* Positioning around tourist */
+.achievementcard.trophy-card {
+    top: 23%;
+    left: 0px;
+    border-radius: 10px;
+
+}
+
+.achievementcard.mapcard {
+    top: 42%;
+    right: -60px;
+
+}
+
+
+.achievementcard.Star-card {
+    bottom: 28%;
+    left: 20px;
+
+}
+
+/* Bottom Card */
+/* .bottom-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background: white;
+  padding: */
+
+/* Bottom Card */
+.bottom-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 72%;
+    height: 124px;
+    margin: 59px auto 100px auto;
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+.label-row {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #000;
+}
+
+.card1 .label-row span {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: auto;
+}
+
+
+.card1 small {
+    font-size: 12px;
+    color: #666666;
+}
+
+/*page2*/
+
+.background {
+    background-color: var(--background-colorlightgray);
+}
+
+.page2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.background .wrapper .page2 .headingpage2 {
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.colorspan {
+    color: var(--orange-color);
+}
+
+.background .wrapper .page2 .headingpage2 h2 {
+    font-family: Volkhov, sans-serif;
+    font-size: 48px;
+    margin-top: 100px;
+    margin-bottom: 24px;
+    position: relative;
+    display: inline-block;
+
+}
+
+.background .wrapper .page2 .headingpage2 h2::after {
+    content: url(./assets/2planes.svg);
+    position: absolute;
+    top: 0px;
+    right: -250px;
+}
+
+.background .wrapper .page2 .headingpage2 p {
+    font-size: 18px;
+    width: 482px;
+    height: 64px;
+    margin-bottom: 64px;
+    color: #666666;
+
+
+}
+
+.top-card {
+    justify-items: center;
+
+}
+
+/* .plane2{
+    position: absolute;
+    
+} */
+.box3 {
+    display: flex;
+    justify-content: center;
+    /* text-align: center;  */
+
+}
+
+.box1 {
+    background-color: white;
+    margin-right: 12px;
+    padding: 32px;
+    border-radius: 8px;
+    margin-bottom: 100px;
+    width: 370px;
+    height: 278px;
+    margin-right: 30px;
+
+}
+
+h4 {
+    font-family: "Poppins";
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 34px;
+}
+
+.box1 .headpage2 p {
+    color: #666666;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+
+}
+
+/* page3*/
+.headingpage3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+section .wrapper .page3 .headingpage3 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+section .wrapper .page3 .headingpage3 .content h2 {
+    width: 675px;
+    height: 54px;
+    font-family: Volkhov, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 54px;
+    margin-bottom: 4px;
+}
+
+section .wrapper .page3 .headingpage3 .content h2 span {
+    color: var(--orange-color);
+    margin-bottom: 24px;
+}
+
+section .wrapper .page3 .headingpage3 .content p {
+    max-width: 433px;
+    height: 64px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #666666;
+
+    text-align: center;
+}
+
+.centerpage3 {
+    /* justify-content: center;
+    align-items: center; */
+    justify-items: center;
+}
+
+.imageslide {
+    display: flex;
+    gap: 30px;
+}
+
+.imagecenter {
+    justify-items: center;
+}
+
+.imagecenter .imageslide .images .touristplaces {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+
+.imagecenter .imageslide .images .touristplaces .img-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0; 
+  padding: 8px 20px;
+  background: rgba(255, 122, 0, 0.9); 
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+
+.imagecenter .imageslide .images .touristplaces:hover .img-btn {
+  opacity: 1;
+  transform: translate(-50%, 100%) scale(1.05);
+  
+}
+.imagecenter .imageslide .images:hover{
+    box-shadow: 0 8px 32px rgba(218, 114, 44, 0.4); 
+}
+
+
+.imagecenter .imageslide .images .touristplaces img {
+  transition: transform 0.3s ease;
+}
+
+.imagecenter .imageslide .images .touristplaces:hover img {
+  transform: scale(1);
+}
+
+.imagecenter .imageslide .images .touristplaces img {
+    width: 270px;
+    height: 290px;
+    border-radius: 8px;
+    
+   
+}
+
+.imagecenter .imageslide .images .rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 1px;
+
+}
+
+.imagecenter .imageslide .images .rating .star {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    transform: translateX(-10px);
+    color: #666666;
+
+}
+
+.imagecenter .imageslide .images .rating .places {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    width: 86px;
+    height: 24px;
+    line-height: 26px;
+    margin-left: 12px;
+}
+
+.imagecenter .imageslide .images .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1px;
+
+}
+
+.imagecenter .imageslide .images .price .country {
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* padding-left: 12px; */
+    color: #666666;
+    display: flex;
+    gap: 5px;
+    margin-left: 12px;
+}
+
+.imagecenter .imageslide .images .price .dollar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 2px;
+    transform: translateX(-10px);
+}
+
+.imagecenter .imageslide .images {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 270px;
+    height: 426px;
+    /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); */
+    /* padding: 1px; */
+
+}
+
+.button {
+    display: flex;
+    /* text-align: center; */
+    /* justify-items: center; */
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+    /* doubt on px */
+    margin-bottom: 50px;
+}
+
+.paracenter {
+    justify-items: center;
+}
+
+/* pag4 */
+
+.headingpage4 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+section .wrapper .page4 .headingpage4 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+section .wrapper .page4 .headingpage4 .content h2 {
+    width: 675px;
+    height: 54px;
+    font-family: Volkhov, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 54px;
+    margin-bottom: 4px;
+    position: relative;
+}
+
+section .wrapper .page4 .headingpage4 .content h2::after {
+    content: url(./assets/Element\ \(1\).svg);
+    position: absolute;
+    top: 0px;
+    right: -40px;
+
+}
+
+section .wrapper .page4 .headingpage4 .content h2 span {
+    color: var(--orange-color);
+    margin-bottom: 24px;
+}
+
+section .wrapper .page4 .headingpage4 .content p {
+    max-width: 521px;
+    height: 64px;
+    font-size: 18px;
+    /* margin-bottom:2px; */
+    text-align: center;
+    color: #666666;
+
+    /* margin-bottom: 64px; */
+}
+
+.imageslide2 {
+    display: flex;
+    gap: 30px;
+}
+
+.imagecenter2 {
+    justify-items: center;
+
+}
+
+.imagecenter2 .imageslide2 .images .touristplaces img {
+    width: 369px;
+    height: 327px;
+    border-radius: 16px;
+}
+.imagecenter2 .imageslide2 .images:hover{
+    box-shadow: 0 8px 32px rgba(218, 114, 44, 0.4); 
+   
+}
+
+.imagecenter2 .imageslide2 .images .rating {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 8px;
+}
+
+.imagecenter2 .imageslide2 .images .rating .pag4price {
+    display: flex;
+    align-items: center;
+    transform: translateX(-20px);
+}
+
+.imagecenter2 .imageslide2 .images .rating .pag4country {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 500px;
+    /* width: 86px;
+    height: 24px; */
+    line-height: 32px;
+    padding-left: 20px;
+}
+
+.imagecenter2 .imageslide2 .images .price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 6px;
+
+}
+
+.imagecenter2 .imageslide2 .images .price .pag4location {
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 2px;
+    display: flex;
+    gap: 10px;
+    color: #666666;
+    padding-left: 20px;
+}
+
+.imagecenter2 .imageslide2 .images .price .pag4rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding-right: 20px;
+}
+
+.imagecenter2 .imageslide2 .images {
+    border-radius: 8px;
+    width: 370px;
+    /*doubt in box shadow or dropshadow */
+    height: 500px;
+    opacity: 100;
+    margin-bottom: 150px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.button1 {
+    display: flex;
+    /* text-align: center; */
+    /* justify-items: center;  */
+    justify-content: flex-end;
+    transform: translateX(35px);
+
+    padding: 10px;
+
+    gap: 30px;
+
+
+    /* margin-right: 300px; 
+  margin-bottom: 20px; */
+}
+
+/* page6 */
+.headingpage6 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+section .wrapper .page6 .headingpage6 h2 span {
+    color: var(--orange-color);
+    margin-bottom: 24px;
+}
+
+section .wrapper .page6 .headcenter6 .headingpage6 .content h2 {
+    width: 646px;
+    height: 54px;
+    font-family: Volkhov, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 54px;
+
+    text-align: center;
+    margin-bottom: 64px;
+    margin-top: 100px;
+}
+
+.headcenter6 {
+    justify-items: center;
+}
+
+.page6box {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+.page6 .box6 .logoss {
+    width: 270px;
+    height: 270px;
+    border-radius: 8px;
+
+}
+
+.page6 .box6 .logoss .describe {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #222222;
+
+}
+
+.page6 .box6 .logoss .inter {
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 26px;
+    color: #999999;
+
+
+}
+
+.slid {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+/* page5  */
+.background3 {
+    background-color: var(--background-colorlightgray);
+    padding: 60px 80px;
+    height: 580px;
+    z-index: 2;
+}
+
+.background3 .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 200px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.background3 .left {
+    max-width: 400px;
+}
+
+.background3 .left h3 {
+    font-family: Volkhov, sans-serif;
+    font-size: 48px;
+    line-height: 54px;
+    margin-bottom: 24px;
+    font-weight: bold;
+}
+
+.background3 .left span {
+    color: var(--orange-color);
+}
+
+.background3 .left p {
+    font-size: 16px;
+    line-height: 32px;
+    color: #666666;
+    margin-bottom: 32px;
+    font-weight: 400;
+
+}
+
+.background3 .button3 {
+    display: flex;
+    gap: 20px;
+}
+
+
+.background3 .right {
+    position: relative;
+    width: 600px;
+}
+
+
+.background3 .right .rightcard1 {
+    width: 504px;
+    height: 245px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 30px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    position: relative;
+    margin-bottom: 40px;
+    margin-top: 70px;
+}
+
+.background3 .right .rightcard1 .page5para {
+    font-size: 16px;
+    color: #444444;
+    margin-bottom: 20px;
+}
+
+.background3 .right .rightcard1 .info h6 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #222222;
+    line-height: auto;
+
+}
+
+.background3 .right .rightcard1 .info .pak {
+    font-size: 14px;
+    color: #666666;
+    line-height: auto;
+    font-weight: 500;
+}
+
+.background3 .right .rightcard2 h6 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #666666;
+    line-height: auto;
+    margin-top: 155px;
+    margin-bottom: -6px;
+
+}
+
+.background3 .right .rightcard2 p {
+    font-size: 14px;
+    color: #666666;
+    line-height: auto;
+    font-weight: 500;
+    margin-left: 5px;
+
+}
+
+
+.background3 .right .rightcard1::before {
+    content: '';
+    background-image: url('./assets/mansimile.png');
+    background-size: cover;
+    background-position: center;
+    width: 68px;
+    height: 68px;
+    border-radius: 50%;
+    position: absolute;
+    top: -32px;
+    left: -30px;
+    border: 3px solid #fff;
+}
+
+
+.background3 .right .rightcard2 {
+    width: 504px;
+    min-height: 232px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.05);
+    margin-top: -20px;
+    z-index: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    /* opacity: 0.5; */
+    background-color: var(--background-colorlightgray);
+    margin-top: 46px;
+
+}
+
+
+
+
+/* Decorative Plane */
+.background3 .right .plane3 {
+    position: absolute;
+    top: -0px;
+    right: -60px;
+    width: 120px;
+    height: auto;
+    z-index: 3;
+}
+
+/* page7 */
+.wrapper .footerheading {
+    background-color: var(--orange-color);
+    width: 1170px;
+    height: 416px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+
+}
+
+.wrapper .footerheading .heading1 h3 {
+    font-family: Volkhov, sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 64px;
+}
+
+.wrapper .footerheading .inputform {
+    width: 674px;
+    height: 68px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 2;
+    align-items: center;
+}
+
+.wrapper .footerheading .inputform .input {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: auto;
+    color: #999999;
+    width: 400px;
+    height: 40px;
+    border: none;
+
+}
+
+.wrapper .footerheading .inputform .bt6 .btn.orange {
+    /* position: absolute;
+  top: 9px;  
+  right: 9px;
+  height: 50px; */
+    width: 132px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: auto;
+
+}
+
+.wrapper .footerheadingcenter .footerheading {
+    position: relative;
+
+    justify-items: center;
+    align-items: center;
+}
+
+/* .wrapper .footerheading .inputform::before{
+    content: url(./assets/messagebox.svg);
+    position: absolute;
+    top: 25px;
+    /* margin: 5px; */
+.wrapper .footerheadingcenter .footerheading .img1 {
+    position: absolute;
+    top: 55px;
+    left: 0px;
+    z-index: 0;
+
+
+
+}
+
+.wrapper .footerheadingcenter .footerheading .img2 {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+}
+
+.wrapper .footerheadingcenter {
+
+    justify-items: center;
+}
+
+.footerflex {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    gap: 450px;
+
+}
+
+.back7 {
+    /* background-color: var(--background-colorlightgray); */
+    /* padding: 60px 80px; */
+    background: linear-gradient(to bottom,
+            #FFFFFF 0%,
+            #FFFFFF 25%,
+            #f7f8fc 25%,
+            #f7f8fc 100%);
+
+
+}
+
+.footerlinks {
+    display: flex;
+    gap: 80px;
+
+}
+
+.wrapper .footerflex .footerheading2 h5 {
+    font-family: Volkhov, sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0.6%;
+    line-height: 24px;
+    color: #222222;
+
+}
+
+.wrapper .footerflex .footerheading2 p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 32px;
+    color: #666666;
+    width: 254px;
+    height: 64px;
+
+}
+
+.wrapper .footerflex .footerlinks .links h3 {
+    font-size: 18px;
+    line-height: 26px;
+    /* color: #666666; */
+    font-weight: 600;
+}
+
+li {
+
+    list-style: none;
+    color: #666666;
+}
+
+.wrapper .footerflex .footerlinks .links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper .footerflex .footerlinks .links ul li {
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.wrapper .footerflex .footerlinks .links ul li a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.rightcenter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightcenter .copyright {
+    font-weight: 400;
+    font-size: 16px;
+    color: #666666;
+}
+
+.rightcenter .terms {
+    font-weight: 400;
+    font-size: 16px;
+    color: #666666;
+    cursor: pointer;
+}
+
+.achievementcard.trophy-card .content {
+    width: 150px;
+    height: 66px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+.achievementcard.mapcard .content {
+    width: 180px;
+    height: 74px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+.achievementcard.Star-card .content {
+    width: 195px;
+    height: 68px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .wrapper {
+        max-width: 95vw;
+        padding: 0 10px;
+    }
+
+    nav .logo {
+        font-size: 20px;
+    }
+
+    .journey {
+        flex-direction: column;
+        margin: 40px auto;
+        gap: 30px;
+    }
+
+    .journey .left {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .journey .left h1 {
+        font-size: 40px;
+    }
+
+    .journey .left p {
+        font-size: 16px;
+        margin-bottom: 32px;
+        max-width: 100%;
+    }
+
+    .journey .right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: static;
+    }
+
+    .image-wrapper {
+        width: 320px;
+        height: 350px;
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .bottom-card {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .image-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .achievementcard-group {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 0;
+        position: static;
+    }
+
+    .achievementcard.trophy-card,
+    .achievementcard.mapcard,
+    .achievementcard.Star-card {
+        position: static;
+        margin: 0;
+        display: block;
+        width: auto;
+    }
+    .achievementcard {
+        position: static;
+        margin-bottom: 0;
+        z-index: 1;
+    }
+
+    .plane {
+        width: 350px;
+        height: 90px;
+        top: 150px;
+        left: -10px;
+        position: relative;
+    }
+
+    .tourist {
+        width: 300px;
+        height: 300px;
+        top: 0;
+        left: 0;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 20px;
+        margin-top: 250px;
+    }
+
+    .achievementcard.Star-card {
+        left: 300px;
+        right: 0;
+        top: 100px;
+        top: unset;
+        bottom: unset;
+        margin: 10px auto;
+        position: absolute;
+        display: block;
+    }
+    .achievementcard.mapcard {
+        left: -180px;
+        right: 0;
+        top: unset;
+        bottom: unset;
+        margin: 10px auto;
+        position: absolute;
+        display: block;
+    }
+    .achievementcard.trophy-card {
+        left: 70px;
+        right: 0;
+        top: 80px;
+        bottom: unset;
+        margin: 10px auto;
+        position: absolute;
+        display: block;
+    }
+
+    .achievementcard {
+        position: absolute;
+        margin-bottom: 10px;
+        z-index: 1;
+    }
+
+    .achievementcard .content {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .bottom-card {
+        width: 700px;
+        min-width: 0;
+        max-width: 100%;
+        height: auto;
+       
+        padding: 16px 10px;
+        gap: 10px;
+        margin: 200px auto 50px auto;
+    }
+
+    .box3 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box1 {
+        width: 95vw;
+        height: auto;
+        margin-right: 0;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+
+    .background3 {
+        padding: 30px 10px;
+        height: auto;
+    }
+
+    .background3 .wrapper {
+        flex-direction: column;
+        gap: 40px;
+        align-items: stretch;
+    }
+
+    .background3 .left,
+    .background3 .right {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .background3 .right .rightcard1,
+    .background3 .right .rightcard2 {
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        margin-left: 0;
+        left: 0;
+    }
+
+    .background3 .right .plane3 {
+        width: 40px;
+        right: -20px;
+    }
+
+    .imageslide,
+    .imageslide2,
+    .footerlinks {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    
+    .page6box {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+    .page6box .box6 {
+        width: 90vw;
+        max-width: 320px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .page6box .box6 .logoss {
+        width: 100%;
+        max-width: 270px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    .page6box .box6 .describe,
+    .page6box .box6 .inter {
+        width: 100%;
+        max-width: 270px;
+        margin: 0 auto 10px auto;
+        text-align: center;
+    }
+
+    .imagecenter .imageslide .images .touristplaces img,
+    .imagecenter2 .imageslide2 .images .touristplaces img {
+        width: 90vw;
+        max-width: 320px;
+        height: auto;
+    }
+
+    .imagecenter .imageslide .images,
+    .imagecenter2 .imageslide2 .images {
+        width: 90vw;
+        max-width: 320px;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .wrapper .footerheading {
+        width: 98vw;
+        min-width: 0;
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    .wrapper .footerheading .heading1 h3 {
+        font-size: 28px;
+        margin-bottom: 32px;
+    }
+
+    .wrapper .footerheading .inputform {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        align-items: stretch;
+    }
+
+    .wrapper .footerheading .inputform .input {
+        width: 100%;
+        min-width: 0;
+        height: 44px;
+    }
+
+    .wrapper .footerheading .inputform .bt6 .btn.orange {
+        width: 100%;
+        min-width: 0;
+        margin-top: 10px;
+    }
+
+    .footerflex {
+        flex-direction: column;
+        gap: 30px;
+        align-items: flex-start;
+    }
+
+    .wrapper .footerflex .footerheading2 p {
+        width: 100%;
+        height: auto;
+    }
+
+    .wrapper .footerflex .footerlinks {
+        gap: 20px;
+    }
+
+    section .wrapper .page3 .headingpage3 .content h2,
+    section .wrapper .page4 .headingpage4 .content h2,
+    section .wrapper .page6 .headcenter6 .headingpage6 .content h2 {
+        width: 95vw;
+        font-size: 28px;
+        height: auto;
+    }
+
+    .background .wrapper .page2 .headingpage2 h2 {
+        font-size: 28px;
+        margin-top: 40px;
+    }
+
+    .background .wrapper .page2 .headingpage2 p {
+        width: 95vw;
+        height: auto;
+        font-size: 16px;
+    }
+
+   
+    .wrapper .footerheadingcenter .footerheading img.img1 {
+        display: block;
+        overflow: hidden;
+        border-radius: 50%;
+        width: 400px;
+        height: auto;
+        object-fit: cover;
+        z-index: 0;
+        
+    }
+    .back7{
+        z-index: 3;
+
+    }
+
+}
+@media(min-width:1024px) and (max-width: 1149px) {
+    .wrapper{
+        margin-left: 10%;
+    }
+    .background{
+        width:140%;
+    }
+     .background3{
+        width:140%;
+    }
+    .imagecenter{
+        margin-left: 25%;
+    }
+    .paracenter{
+        margin-left: 25%;
+    }
+    .button{
+          margin-left: 25%;
+
+    }
+    .headingpage4{
+        margin-left: 25%;
+    }
+    .imagecenter2{
+        margin-left: 25%;
+    }
+    .page6box{
+        margin-left: 25%;
+    }
+    .slid{
+         margin-left: 25%;
+
+    }
+    .headcenter6{
+        margin-left: 25%;
+    }
+  
+    .back7{
+        width:140%;
+    }
+    
+
+}
