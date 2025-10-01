@@ -12,6 +12,7 @@ A simple web page built using HTML and CSS.
 ## Getting Started
 
 1. Clone the repository or download the source files.
+use:https://github.com/Rahinmon2903/Guvi-task1
 2. Open `index.html` in your web browser.
 
 ## Folder Structure
